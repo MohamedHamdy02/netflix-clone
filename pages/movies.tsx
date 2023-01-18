@@ -8,6 +8,7 @@ import useList from "../hooks/useList";
 import useAuth from "../hooks/useAuth";
 import Banner from "../components/Banner";
 import Head from "next/head";
+import Header from "../components/Header";
 
 interface Props {
   title: string;
@@ -61,6 +62,7 @@ function Movies({
           <title>Movies - Netflix</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <Header />
         <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
           <Banner netflixOriginals={netflixOriginals} />
           <section className="md:space-y-24">
