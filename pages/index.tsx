@@ -1,3 +1,4 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { useRecoilValue } from "recoil";
 import { modalState } from "../atoms/modalAtoms";
@@ -71,7 +72,7 @@ const Home = ({
 
 export default Home;
 
-export const getServerSideProps = async () => {
+export const getServerSideProps : GetServerSideProps = async () => {
   const [
     netflixOriginals,
     trendingNow,

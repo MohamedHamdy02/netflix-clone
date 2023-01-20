@@ -90,7 +90,7 @@ function register() {
               className="input"
               {...register("password", { required: true })}
             />
-            {errors.password && (
+            {errors.confirmPassword && (
               <p className="pt-3 text-[16px] font-light text-red-600">
                 Your password does not match
               </p>
